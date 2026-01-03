@@ -1,0 +1,151 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 30px;
+    width: 600px;
+    background-color: rgba(255, 255, 255, 0.25); /* frosted glass */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 12px;
+    padding: 30px 0 50px 0;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.3);
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.text {
+    color: rgb(80, 80, 80);
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.underline {
+    width: 60px;
+    height: 6px;
+    background: gray;
+    border-radius: 9px;
+}
+
+.inputs {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 480px;
+    height: 70px;
+    background-color: rgba(230, 227, 227, 0.35); /* transparent input box */
+    border-radius: 12px;
+    padding: 0 15px;
+    transition: all 0.3s ease;
+}
+
+.input:hover {
+    background-color: rgba(230, 227, 227, 0.55);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.input img {
+    margin: 0px 20px;
+    width: 25px;
+    height: 25px;
+}
+
+.input input {
+    height: 50px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+}
+
+.forgot-password {
+    padding-left: 60px;
+    margin-top: 20px;
+    color: #000000aa;
+    font-size: 16px;
+}
+
+.forgot-password span {
+    color: #0d6efd;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.forgot-password span:hover {
+    text-decoration: underline;
+}
+
+.submit-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 50px auto 0 auto;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 55px;
+    color: #fff;
+    background: rgba(44, 45, 45, 0.9);
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+.gray {
+    background: rgba(234, 234, 234, 0.9);
+    color: #676767;
+}
+
+.message {
+    margin: 20px auto 0 auto;
+    width: 480px;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.message.success {
+    background-color: rgba(40, 167, 69, 0.8);
+    color: white;
+}
+
+.message.error {
+    background-color: rgba(220, 53, 69, 0.8);
+    color: white;
+}
